@@ -19,33 +19,33 @@ int main() {
     InitWindow(screenWidth, screenHeight, "Calculating Empires: Evolution of AI");
     SetTargetFPS(60);
 
-    // Data taken directly from the Calculating Empires AI column
-    std::vector<AIEra> timeline = {
-        AIEra("1. Symbolic AI (1st AI Summer)", "1956 - 1973", "AI Summer", "Hundreds - Thousands",
-              "Dartmouth Workshop, Perceptron, ELIZA, & early logic-based microworlds.",
-              "\"Within a generation... the problem of creating 'artificial intelligence' will substantially be solved.\" - Marvin Minsky (1967)",
-              2, GOLD),
+// Data taken directly from the Calculating Empires AI column
+std::vector<AIEra> timeline = {
+    AIEra("1. Symbolic AI (1st AI Summer)", "1956 - 1973", "1st AI Summer (Dartmouth & DARPA Funds)", "Hundreds - Thousands",
+          "Dartmouth Project & DARPA funds spark early AI: Perceptron Mark I, ADALINE, ELIZA, Logic Theorist, & microworlds.",
+          "\"Within a generation... the problem of creating 'artificial intelligence' will substantially be solved.\" - Marvin Minsky (1967)",
+          2, GOLD),
 
-        AIEra("2. The 1st AI Winter", "1974 - 1980", "AI Winter", "Thousands",
-              "DARPA funding cuts and the Lighthill Report expose limits of early symbolic reasoning.",
-              "\"In no part of the field have the discoveries made so far produced the major impact that was then promised.\" - James Lighthill (1973)",
-              1, SKYBLUE),
+    AIEra("2. The 1st AI Winter", "1974 - 1980", "1st AI Winter (DARPA Cuts & SIR Debate)", "Thousands",
+          "DARPA funding cuts, Lighthill Report, & SIR debate hit as rule/logic limits & translation hurdles slow early hype.",
+          "\"In no part of the field have the discoveries made so far produced the major impact that was then promised.\" - James Lighthill (1973)",
+          1, SKYBLUE),
 
-        AIEra("3. Expert Systems (2nd Summer & Winter)", "1980 - 1993", "AI Summer -> Winter", "100 Thousand - 1 Million",
-              "Rise of rule-based knowledge systems & LISP machines, followed by the 1987 LISP market collapse.",
-              "Focus shifted to narrow domain rules, proving fragile and expensive to maintain.",
-              3, ORANGE),
+    AIEra("3. Expert Systems (2nd Summer & Winter)", "1980 - 1993", "2nd Summer -> 2nd Winter (5th Gen & LISP)", "100 Thousand - 1 Million",
+          "Japan's 5th Gen CPU & LISP boom fuel rule-based systems, WordNet, & early ML, before LISP & 5th Gen collapses trigger winter.",
+          "Commercial rule-based systems & LISP machines surged, then contracted as narrow rules proved fragile and costly to maintain.",
+          3, ORANGE),
 
-        AIEra("4. Machine Learning (3rd AI Spring)", "1993 - 2011", "AI Spring", "1 Million - 100 Million",
-              "Shift from hand-coded rules to statistical learning: Deep Blue vs Kasparov, DARPA Grand Challenge.",
-              "Algorithms begin learning patterns directly from data rather than explicit human rules.",
-              5, GREEN),
+    AIEra("4. Machine Learning (3rd AI Spring)", "1993 - 2011", "3rd AI Spring (1993-2010: Data, Compute & DARPA)", "1 Million - 100 Million",
+          "DARPA Challenges, growing compute, & larger datasets drive Deep Blue vs. Kasparov, LeNet-5, & statistical/neural ML.",
+          "Algorithms begin learning patterns directly from data rather than relying solely on hand-coded human rules.",
+          5, GREEN),
 
-        AIEra("5. Generative AI & LLMs (3rd AI Summer)", "2012 - Present", "AI Summer", "Billion - 100 Trillion",
-              "ImageNet breakthrough, Transformers, GANs, & Multimodal LLMs requiring massive compute & labor.",
-              "Raises critical questions of energy efficiency, data scraping, and corporate consolidation.",
-              8, RED)
-    };
+    AIEra("5. Generative AI & LLMs (3rd AI Summer)", "2010 - Present", "3rd AI Summer (2010-Present: Compute & Scale)", "Billion - 100 Trillion",
+          "Massive compute & datasets scale GANs, Diffusion, Transformers, & Multimodal LLMs across Vision, Games, Text, & Speech.",
+          "Raises critical questions of energy efficiency, data scraping, labor, and corporate consolidation.",
+          8, RED)
+};
 
     int currentIndex = 0;
     std::cout << "Welcome to the Calculating Empires AI Timeline Explorer!\n";
